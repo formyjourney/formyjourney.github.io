@@ -1,0 +1,666 @@
+/*** project1.html structure ***/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.p_section > .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+/* Section */
+.section {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Column */
+.p_section .col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.p_section .col:first-child { margin-left: 0 !important; }
+
+/* Row */
+.p_section .row:before,
+.p_section .row:after { content:""; display:table; }
+.p_section .row:after { clear:both;}
+.p_section .row { zoom:1; /* For IE 6/7 */ }
+
+/* Grid */
+.grid_1_of_2{ width: 49.2% }
+.grid_2_of_2{ width: 49.2% }
+.grid_3_of_3{ width: 100%; text-align: center; }
+
+/* Full Width below 768 pixels */
+@media only screen and (max-width: 768px) {
+  .col {  margin: 1% 0 1% 0%; }
+  [class*='grid_'] { width: 100%; }
+}
+
+@media (min-width: 576px) {
+    .p_section > .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .p_section > .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .p_section > .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .p_section > .container {
+      max-width: 1140px; } }
+
+.p_section > .container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.p_section > .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.p_section > section {
+    display: block;
+}
+
+body {
+     margin: 0;
+     font-size: 1rem;
+     font-weight: normal;
+     line-height: 1.5;
+     text-align: left;
+}
+
+.caption-box, .caption-col {
+      position: relative;
+  }
+
+img {
+      vertical-align: middle;
+      border-style: none;
+  }
+
+.image-container, .image-container--fluid {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-caption {
+    width: 100%;
+    position: relative;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.prototype-button {
+  font-family: 'Merriweather',sans-serif;
+  font-weight: bold;
+  color: #CC3366 !important;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: 2px solid #CC3366;
+  background: #FFFFFF;
+}
+
+.prototype-button:hover {
+  color: #FFFFFF !important;
+  background: #CC3366;
+  }
+
+  /*** project1.html body headers ***/
+
+.p_section--header-sub {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.p_section--header-sub > .container-fluid {
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.p_section--header-sub .text-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+      .p_section--header-sub .text-container h2 {
+        font-size: 1.75rem;
+        line-height: 1;
+      }
+
+    .p_section--header-sub .image-container {
+      height: 200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .p_section--header-sub .image-container img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+
+  @media (min-width: 576px) {
+    .p_section--header-sub .text-container h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .p_section--header-sub {
+      height: 300px; }
+      .p_section--header-sub .text-container h2 {
+        font-size: 3.75rem; }
+      .p_section--header-sub .image-container {
+        height: 300px; }
+        .p_section--header-sub .image-container img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover; }
+        }
+
+
+/*** project1.html - ClassUp Summary ***/
+
+.p_section--text {
+  padding: 50px 15px;
+}
+
+  .p_section--text .text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.76;
+  }
+
+    .p_section--text .text-container h3, .p_section--text .text-container .h3 {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+.p_section--text .text-container h3:not(:nth-child(1)), .p_section--text .text-container .h3:not(:nth-child(1)) {
+        margin-top: 20px;
+  }
+
+    .p_section--text .text-container p, .p_section--text .text-container .p {
+      margin: 0 0 20px 0;
+      font-size: 1.125rem;
+      line-height: 1.76;
+ }
+
+.p_section--text .text-container p:nth-last-child(1), .p_section--text .text-container .p:nth-last-child(1) {
+        margin-bottom: 0;
+}
+
+  @media (min-width: 576px) {
+  .p_section--text {
+    padding: 80px 15px; }
+    .p_section--text .text-container h3, .p_section--text .text-container .h3 {
+      font-size: 1.563rem; }
+    .p_section--text .text-container p, .p_section--text .text-container .p {
+      font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+  .p_section--text {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  .p_section--text .text-container {
+    padding: 50px 30px;
+  }
+  .p_section--text .text-container h3, .p_section--text .text-container .h3 {
+    font-size: 1.875rem;
+  }
+  .p_section--text .text-container p, .p_section--text .text-container .p {
+    font-size: 1.125rem; }
+  }
+
+@media (min-width: 992px) {
+  .p_section--text .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/*** project1.html - ClassUp User Survey Results ***/
+
+.p_section--usersurvey {
+  padding: 50px 15px;
+}
+
+.p_section--usersurvey .text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.76;
+    text-align: left;
+    justify-content: center;
+  }
+
+.p_section--usersurvey .text-container h3, .p_section--usersurvey .text-container .h3 {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+.p_section--usersurvey .text-container h3:not(:nth-child(1)), .p_section--usersurvey .text-container .h3:not(:nth-child(1)) {
+        margin-top: 20px;
+  }
+
+.p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
+      margin: 0 0 20px 0;
+      font-size: 1.125rem;
+      line-height: 1.76;
+ }
+
+.p_section--usersurvey .text-container p:nth-last-child(1), .p_section--usersurvey .text-container .p:nth-last-child(1) {
+        margin-bottom: 0;
+}
+
+  @media (min-width: 576px) {
+.p_section--usersurvey {
+    padding: 80px 15px; }
+.p_section--usersurvey .text-container h3, .p_section--usersurvey .text-container .h3 {
+      font-size: 1.563rem; }
+.p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
+      font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--usersurvey {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+.p_section--usersurvey .text-container {
+    padding: 50px 30px;
+  }
+.p_section--usersurvey.text-container h3, .p_section--usersurvey .text-container .h3 {
+    font-size: 1.875rem;
+  }
+.p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
+    font-size: 1.125rem; }
+  }
+
+@media (min-width: 992px) {
+.p_section--usersurvey .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+    /*** project1.html - ClassUp Competitive Analysis ***/
+
+.p_section--competitive .image-container.display-mode--fit {
+   margin-top: 25px;
+}
+
+/*** project1.html - ClassUp User Stories***/
+
+.p_section--userstories .image-container.display-mode--fit {
+margin-top: 25px;
+}
+
+/*** project1.html - ClassUp BRanding ***/
+
+.p_section--branding .image-container.display-mode--default {
+  margin-top: 25px;
+}
+
+  /*** project1.html - ClassUp Testing Wireframes ***/
+
+.p_section--testing {
+    padding: 25px 15px;
+  }
+
+.p_section--testing .text-container {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.76;
+  text-align: left;
+  justify-content: center;
+}
+
+.p_section--testing .text-container h3, .p_section--testing .text-container .h3 {
+        font-size: 1.25rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+.p_section--testing .text-container h3:not(:nth-child(1)), .p_section--testing .text-container .h3:not(:nth-child(1)) {
+          margin-top: 20px;
+    }
+
+.p_section--testing .text-container p, .p_section--testing .text-container .p {
+        margin: 0 0 20px 0;
+        font-size: 1.125rem;
+        line-height: 1.76;
+   }
+
+.p_section--testing .text-container p:nth-last-child(1), .p_section--testing .text-container .p:nth-last-child(1) {
+          margin-bottom: 0;
+  }
+
+    @media (min-width: 576px) {
+.p_section--testing {
+      padding: 80px 15px; }
+      .p_section--testing .text-container h3, .p_section--testing .text-container .h3 {
+        font-size: 1.563rem; }
+      .p_section--testing .text-container p, .p_section--testing .text-container .p {
+        font-size: 1.125rem; } }
+
+  @media (min-width: 768px) {
+.p_section--testing {
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+    }
+
+.p_section--testing .text-container {
+      padding: 50px 30px;
+    }
+
+.p_section--testing .text-container h3, .p_section--testing .text-container .h3 {
+      font-size: 1.875rem;
+    }
+
+.p_section--testing .text-container p, .p_section--testing .text-container .p {
+      font-size: 1.125rem; }
+    }
+
+  @media (min-width: 992px) {
+.p_section--testing .text-container {
+      max-width: 720px;
+      padding: 0; }
+    }
+
+/*** project1.html - Prototyping 2 ***/
+
+.p_section--prototyping2 {
+  padding: 25px 15px;
+}
+
+.p_section--prototyping2 .text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.76;
+    text-align: left;
+    justify-content: center;
+  }
+
+.p_section--prototyping2 .text-container h3, .p_section--prototyping2 .text-container .h3 {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+.p_section--prototyping2 .text-container h3:not(:nth-child(1)), .p_section--prototyping2 .text-container .h3:not(:nth-child(1)) {
+        margin-top: 20px;
+  }
+
+.p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
+      margin: 0 0 20px 0;
+      font-size: 1.125rem;
+      line-height: 1.76;
+ }
+
+.p_section--prototyping2 .text-container p:nth-last-child(1), .p_section--prototyping2 .text-container .p:nth-last-child(1) {
+        margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+.p_section--prototyping2 {
+  padding: 80px 15px; }
+  .p_section--prototyping2 .text-container h3, .p_section--prototyping2.text-container .h3 {
+    font-size: 1.563rem; }
+  .p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
+    font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--prototyping2 {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.p_section--prototyping2 .text-container {
+  padding: 50px 30px;
+}
+
+.p_section--prototyping2 .text-container h3, .p_section--prototyping2 .text-container .h3 {
+  font-size: 1.875rem;
+}
+
+.p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
+  font-size: 1.125rem; }
+}
+
+@media (min-width: 992px) {
+.p_section--prototyping2 .text-container {
+  max-width: 720px;
+  padding: 0; }
+}
+
+/*** project1.html - ClassUp Reflections ***/
+
+.p_section--reflections {
+  padding: 25px 15px;
+}
+
+.p_section--reflections .text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.76;
+  }
+
+.p_section--reflections .text-container h3, .p_section--reflections .text-container .h3 {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+.p_section--reflections .text-container h3:not(:nth-child(1)), .p_section--reflections .text-container .h3:not(:nth-child(1)) {
+        margin-top: 20px;
+  }
+
+.p_section--reflections .text-container p, .p_section--reflections .text-container .p {
+      margin: 0 0 20px 0;
+      font-size: 1.125rem;
+      line-height: 1.76;
+ }
+
+.p_section--reflections .text-container p:nth-last-child(1), .p_section--reflections .text-container .p:nth-last-child(1) {
+        margin-bottom: 0;
+}
+
+  @media (min-width: 576px) {
+.p_section--reflections {
+    padding: 80px 15px; }
+    .p_section--reflections .text-container h3, .p_section--reflections .text-container .h3 {
+      font-size: 1.563rem; }
+    .p_section--reflections .text-container p, .p_section--reflections .text-container .p {
+      font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--reflections {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+
+.p_section--reflections .text-container {
+    padding: 50px 30px;
+  }
+
+.p_section--reflections .text-container h3, .p_section--reflections .text-container .h3 {
+    font-size: 1.875rem;
+  }
+
+.p_section--reflections .text-container p, .p_section--reflections .text-container .p {
+    font-size: 1.125rem; }
+  }
+
+@media (min-width: 992px) {
+.p_section--reflections .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/*** project1.html - Project Footer ***/
+
+.hr {
+  border: 2px solid #000000;
+}
+
+h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.footer .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .owner-title-line {
+  align-self: flex-start;
+}
+
+
+.footer .owner-projects {
+  align-self: center;
+}
+
+.footer .owner-footer-contact {
+  align-self: flex-end;
+}
+
+/*** project1.html - Footer - BusyBus Card ***/
+
+.card {
+  margin: 10px;
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+  width: 400px;
+  height: 90px;
+}
+
+.card img {
+    height: 100%;
+    width: 50%;
+    max-width: 50%;
+    object-fit: contain;
+    flex: 1 1 auto;
+  }
+
+.card-head {
+    margin-bottom: 15px;
+    font-family:'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 6px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .card-action-button {
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Merriweather',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #CC3366;
+    text-decoration: none;
+  }
+
+  .card-action-button:hover {
+    background-color: rgb(247,224,231);
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 10px rgba(51, 51, 102, 1);
+  }
+
+
+/*** project1.html - Footer - Social Media Contact Icons/Links ***/
+
+ul.contact-links img {
+  padding: 5px;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+}
+
+ul.contact-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+ul.contact-links li {
+    display: inline-block;
+    margin: 2px;
+}

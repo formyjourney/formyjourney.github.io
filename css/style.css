@@ -1,0 +1,152 @@
+/*** Media Query ***/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+
+/*** typography ***/
+h1, h2, h3, h4 {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 45px;
+}
+
+p {
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.image-caption .text {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.55;
+    color: #7b7e80;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/*** background ***/
+body {
+  background-color:#FFFF;
+  color: #333333;
+}
+
+/*** navigation ***/
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .navbar {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: #CC3366;
+            font-size: 24px;
+            padding: 10px;
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 15px;
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo > img {
+          width: 119px;
+          height: 30px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: #CC3366;
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: #CC3366;
+            }
+        }
