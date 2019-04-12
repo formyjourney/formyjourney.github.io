@@ -1,5 +1,33 @@
 /*** index.html body ***/
-.i-section--header-main .container-fluid{
+
+.grid-container {
+  margin: 15% 2% 0 2%;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-column-gap: 10px;
+}
+
+.greeting {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.learn-more {
+  grid-column-start: 3;
+  grid-column-end: 4
+}
+
+.main-button {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.header-main .container-fluid{
   height: 100%;
   width: 100%;
   align-items: left;
@@ -87,7 +115,7 @@
   line-height: 15px;
 }
 
-.i-section--projects-main .container-fluid{
+.header-main .container-fluid{
   height: 100%;
   width: 100%;
   align-items: left;
@@ -217,6 +245,6 @@
 
 .contact-links img{
   padding: 10px 10px 10px;
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
 }
