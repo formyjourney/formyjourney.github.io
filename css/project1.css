@@ -21,6 +21,7 @@ html {
   clear: both;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 /* Column */
@@ -35,7 +36,7 @@ html {
 .p_section .row:before,
 .p_section .row:after { content:""; display:table; }
 .p_section .row:after { clear:both;}
-.p_section .row { zoom:1; /* For IE 6/7 */ }
+.p_section .row { zoom:1; }
 
 /* Grid */
 .grid_1_of_2{ width: 49.2% }
@@ -132,6 +133,7 @@ h1, h2 {
   border-radius: 2px;
   border: 2px solid #CC3366;
   background: #FFFFFF;
+  text-decoration: none;
 }
 
 .prototype-button:hover {
@@ -343,9 +345,20 @@ h1, h2 {
 margin-top: 25px;
 }
 
-/*** project1.html - ClassUp BRanding ***/
+/*** project1.html - ClassUp Black and White Prototype Testing ***/
+
+.p_section--prototypetesting .prototype-button {
+  margin-top: 20px;
+}
+
+/*** project1.html - ClassUp Branding ***/
 
 .p_section--branding .image-container.display-mode--default {
+  margin-top: 25px;
+}
+
+/*** project1.html - ClassUp Images ***/
+.p_section--images .text-container {
   margin-top: 25px;
 }
 

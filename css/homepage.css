@@ -1,49 +1,30 @@
 /*** index.html body ***/
 
 .grid-container {
-  margin: 15% 2% 0 2%;
+  margin: 2% 2% 0 2%;
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-column-gap: 10px;
 }
 
-.greeting {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
 .text {
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
-.learn-more {
-  grid-column-start: 3;
-  grid-column-end: 4
+.grid-container div {
+  margin: 0 0 0.5em;
 }
 
-.main-button {
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
+/*** index.html body styling ***/
 
-.header-main .container-fluid{
-  height: 100%;
-  width: 100%;
-  align-items: left;
-  justify-content: left;
-}
-
-.greeting > h3 {
-  position: absolute;
-  top: 15px;
-  padding-left: 157px;
+.greeting {
   font-weight: bold;
   font-size: 48px;
   line-height: 64px;
 }
 
-.underline {
+.greeting .underline {
   background-size: 1px 1em;
   box-shadow:
     inset 0 -0.175em white,
@@ -52,7 +33,6 @@
 }
 
 .text > h3 {
-  position: absolute;
   width: 612px;
   height: 60px;
   left: 157px;
@@ -60,7 +40,6 @@
 }
 
 .text > p {
-  position: absolute;
   width: 848px;
   height: 79px;
   top: 150px;
@@ -69,7 +48,6 @@
 }
 
 .learn-more {
-  position: absolute;
   width: 248px;
   height: 16px;
   left: 157px;
@@ -98,7 +76,7 @@
   vertical-align: middle;
 }
 
-.main-button .button1{
+.button1{
   background-color: #CC3366;
   color: white;
   border: none;
@@ -115,29 +93,19 @@
   line-height: 15px;
 }
 
-.header-main .container-fluid{
-  height: 100%;
-  width: 100%;
-  align-items: left;
-  justify-content: left;
-}
-
 .work h3{
-  position: absolute;
   width: 303px;
   height: 30px;
-  left: 157px;
-  top: 335px;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+/*** index.html projects styling ***/
 
-.clearfix:after {
-    clear: both;
+.card-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-gap: 50px;
+   margin-left: 157px;
+ }
 }
 
 .card {
@@ -148,77 +116,68 @@
   max-width: 300px;
   width: 300px;
   display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.bg-img > img {
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+  overflow: hidden;
 }
 
 .card-media {
   width: 100%;
 }
 
-.card-details {
-  padding: 5px 15px;
-}
-
-.card-details p {
-  font-family:'Montserrat',sans-serif;
+.content > p {
+  padding: 15px;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 24px;
-  color: #333333;
-  opacity: 0.6;
 }
 
-.card-head {
-  margin-bottom: 15px;
-  font-family:'Montserrat',sans-serif;
+.content > b {
+  padding: 15px;
+  font-family: 'Montserrat',sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
 }
 
-.card-action-button {
+button {
+  background: #FFFFFF;
+  border: 2px solid #CC3366;
   border-radius: 2px;
-  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  margin: 0;
-  padding: 10px;
-  font-family: 'Merriweather',sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:'Montserrat',sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: normal;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  color: #CC3366;
-  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
 }
 
-.card-action-button:hover {
-  background-color: rgb(247,224,231);
+button:hover {
+  background-color: #CC3366;
+  color: #FFFFFF;
 }
 
 .card:hover {
   box-shadow: 0 10px 10px rgba(51, 51, 102, 1);
 }
 
-.case-study1 {
-  margin-top: 395px;
-  margin-left: 160px;
-  float: left;
-}
-
-.case-study2 {
-  float: right;
-  margin-right: 260px;
-  margin-top: 395px;
-}
-
 /*** index.html footer ***/
 
-.main-footer .container-fluid{
+.main-footer{
     width: 100%;
     overflow: auto;
 }
