@@ -43,25 +43,6 @@ html {
 .grid_2_of_2{ width: 49.2% }
 .grid_3_of_3{ width: 100%; text-align: center; }
 
-/* Full Width below 768 pixels */
-@media only screen and (max-width: 768px) {
-  .col {  margin: 1% 0 1% 0%; }
-  [class*='grid_'] { width: 100%; }
-}
-
-@media (min-width: 576px) {
-    .p_section > .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .p_section > .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .p_section > .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .p_section > .container {
-      max-width: 1140px; } }
-
 .p_section > .container-fluid {
   width: 100%;
   margin-right: auto;
@@ -124,6 +105,8 @@ h1, h2 {
   padding-right: 15px;
   padding-left: 15px; }
 
+  /*** project1.html prototype buttons  ***/
+
 .prototype-button {
   font-family: 'Merriweather',sans-serif;
   font-weight: bold;
@@ -183,25 +166,6 @@ h1, h2 {
         object-position: 50% 50%;
       }
 
-  @media (min-width: 576px) {
-    .p_section--header-sub .text-container h2 {
-      font-size: 2.5rem;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .p_section--header-sub {
-      height: 300px; }
-      .p_section--header-sub .text-container h2 {
-        font-size: 3.75rem; }
-      .p_section--header-sub .image-container {
-        height: 300px; }
-        .p_section--header-sub .image-container img {
-          width: 100%;
-          height: 300px;
-          object-fit: cover; }
-        }
-
 
 /*** project1.html - ClassUp Summary ***/
 
@@ -215,6 +179,10 @@ h1, h2 {
     font-size: 1.125rem;
     line-height: 1.76;
   }
+
+.p_section--text .text-container h4 {
+  text-align: center;
+}
 
     .p_section--text .text-container h3, .p_section--text .text-container .h3 {
       font-size: 1.25rem;
@@ -237,20 +205,7 @@ h1, h2 {
         margin-bottom: 0;
 }
 
-  @media (min-width: 576px) {
-  .p_section--text {
-    padding: 80px 15px; }
-    .p_section--text .text-container h3, .p_section--text .text-container .h3 {
-      font-size: 1.563rem; }
-    .p_section--text .text-container p, .p_section--text .text-container .p {
-      font-size: 1.125rem; } }
 
-@media (min-width: 768px) {
-  .p_section--text {
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-  }
   .p_section--text .text-container {
     padding: 50px 30px;
   }
@@ -259,12 +214,6 @@ h1, h2 {
   }
   .p_section--text .text-container p, .p_section--text .text-container .p {
     font-size: 1.125rem; }
-  }
-
-@media (min-width: 992px) {
-  .p_section--text .text-container {
-    max-width: 720px;
-    padding: 0; }
   }
 
 /*** project1.html - ClassUp User Survey Results ***/
@@ -303,20 +252,6 @@ h1, h2 {
         margin-bottom: 0;
 }
 
-  @media (min-width: 576px) {
-.p_section--usersurvey {
-    padding: 80px 15px; }
-.p_section--usersurvey .text-container h3, .p_section--usersurvey .text-container .h3 {
-      font-size: 1.563rem; }
-.p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
-      font-size: 1.125rem; } }
-
-@media (min-width: 768px) {
-.p_section--usersurvey {
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-  }
 .p_section--usersurvey .text-container {
     padding: 50px 30px;
   }
@@ -325,12 +260,6 @@ h1, h2 {
   }
 .p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
     font-size: 1.125rem; }
-  }
-
-@media (min-width: 992px) {
-.p_section--usersurvey .text-container {
-    max-width: 720px;
-    padding: 0; }
   }
 
     /*** project1.html - ClassUp Competitive Analysis ***/
@@ -398,20 +327,6 @@ margin-top: 25px;
           margin-bottom: 0;
   }
 
-    @media (min-width: 576px) {
-.p_section--testing {
-      padding: 80px 15px; }
-      .p_section--testing .text-container h3, .p_section--testing .text-container .h3 {
-        font-size: 1.563rem; }
-      .p_section--testing .text-container p, .p_section--testing .text-container .p {
-        font-size: 1.125rem; } }
-
-  @media (min-width: 768px) {
-.p_section--testing {
-      padding: 100px 0;
-      display: flex;
-      align-items: center;
-    }
 
 .p_section--testing .text-container {
       padding: 50px 30px;
@@ -423,12 +338,6 @@ margin-top: 25px;
 
 .p_section--testing .text-container p, .p_section--testing .text-container .p {
       font-size: 1.125rem; }
-    }
-
-  @media (min-width: 992px) {
-.p_section--testing .text-container {
-      max-width: 720px;
-      padding: 0; }
     }
 
 /*** project1.html - Prototyping 2 ***/
@@ -467,20 +376,7 @@ margin-top: 25px;
         margin-bottom: 0;
 }
 
-@media (min-width: 576px) {
-.p_section--prototyping2 {
-  padding: 80px 15px; }
-  .p_section--prototyping2 .text-container h3, .p_section--prototyping2.text-container .h3 {
-    font-size: 1.563rem; }
-  .p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
-    font-size: 1.125rem; } }
 
-@media (min-width: 768px) {
-.p_section--prototyping2 {
-  padding: 100px 0;
-  display: flex;
-  align-items: center;
-}
 
 .p_section--prototyping2 .text-container {
   padding: 50px 30px;
@@ -492,12 +388,6 @@ margin-top: 25px;
 
 .p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
   font-size: 1.125rem; }
-}
-
-@media (min-width: 992px) {
-.p_section--prototyping2 .text-container {
-  max-width: 720px;
-  padding: 0; }
 }
 
 /*** project1.html - ClassUp Reflections ***/
@@ -534,21 +424,6 @@ margin-top: 25px;
         margin-bottom: 0;
 }
 
-  @media (min-width: 576px) {
-.p_section--reflections {
-    padding: 80px 15px; }
-    .p_section--reflections .text-container h3, .p_section--reflections .text-container .h3 {
-      font-size: 1.563rem; }
-    .p_section--reflections .text-container p, .p_section--reflections .text-container .p {
-      font-size: 1.125rem; } }
-
-@media (min-width: 768px) {
-.p_section--reflections {
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-  }
-
 .p_section--reflections .text-container {
     padding: 50px 30px;
   }
@@ -559,12 +434,6 @@ margin-top: 25px;
 
 .p_section--reflections .text-container p, .p_section--reflections .text-container .p {
     font-size: 1.125rem; }
-  }
-
-@media (min-width: 992px) {
-.p_section--reflections .text-container {
-    max-width: 720px;
-    padding: 0; }
   }
 
 /*** project1.html - Project Footer ***/
@@ -631,7 +500,7 @@ h4 {
     color: #333333;
   }
 
-  .card-action-button {
+.card-action-button {
     border-radius: 2px;
     cursor: pointer;
     display: inline-block;
@@ -648,11 +517,11 @@ h4 {
     text-decoration: none;
   }
 
-  .card-action-button:hover {
+.card-action-button:hover {
     background-color: rgb(247,224,231);
   }
 
-  .card:hover {
+.card:hover {
     box-shadow: 0 10px 10px rgba(51, 51, 102, 1);
   }
 
@@ -677,3 +546,159 @@ ul.contact-links li {
     display: inline-block;
     margin: 2px;
 }
+
+/* Media Queries for Headers */
+
+@media (min-width: 576px) {
+  .p_section--header-sub .text-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .p_section--header-sub {
+    height: 300px; }
+    .p_section--header-sub .text-container h2 {
+      font-size: 3.75rem; }
+    .p_section--header-sub .image-container {
+      height: 300px; }
+      .p_section--header-sub .image-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; }
+      }
+
+
+/* Full Width below 768 pixels */
+@media only screen and (max-width: 768px) {
+  .col {  margin: 1% 0 1% 0%; }
+  [class*='grid_'] { width: 100%; }
+}
+
+@media (min-width: 576px) {
+    .p_section > .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .p_section > .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .p_section > .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .p_section > .container {
+      max-width: 1140px; } }
+
+/* Media Queries - ClassUp Summary */
+
+@media (min-width: 576px) {
+.p_section--text {
+  padding: 80px 15px; }
+  .p_section--text .text-container h3, .p_section--text .text-container .h3 {
+    font-size: 1.563rem; }
+  .p_section--text .text-container p, .p_section--text .text-container .p {
+    font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--text {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .p_section--text .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/* Media Queries - ClassUp User Stories */
+
+@media (min-width: 576px) {
+.p_section--usersurvey {
+  padding: 80px 15px; }
+.p_section--usersurvey .text-container h3, .p_section--usersurvey .text-container .h3 {
+    font-size: 1.563rem; }
+.p_section--usersurvey .text-container p, .p_section--usersurvey .text-container .p {
+    font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--usersurvey {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+.p_section--usersurvey .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/* Media Queries - ClassUp Testing Wireframes */
+
+@media (min-width: 576px) {
+.p_section--testing {
+  padding: 80px 15px; }
+  .p_section--testing .text-container h3, .p_section--testing .text-container .h3 {
+    font-size: 1.563rem; }
+  .p_section--testing .text-container p, .p_section--testing .text-container .p {
+    font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--testing {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+.p_section--testing .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/* Media Queries - ClassUp Prototyping 2 */
+
+  @media (min-width: 576px) {
+  .p_section--prototyping2 {
+    padding: 80px 15px; }
+    .p_section--prototyping2 .text-container h3, .p_section--prototyping2.text-container .h3 {
+      font-size: 1.563rem; }
+    .p_section--prototyping2 .text-container p, .p_section--prototyping2 .text-container .p {
+      font-size: 1.125rem; } }
+
+  @media (min-width: 768px) {
+  .p_section--prototyping2 {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 992px) {
+  .p_section--prototyping2 .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }
+
+/* Media Queries - ClassUp Reflections */
+
+  @media (min-width: 576px) {
+.p_section--reflections {
+    padding: 80px 15px; }
+    .p_section--reflections .text-container h3, .p_section--reflections .text-container .h3 {
+      font-size: 1.563rem; }
+    .p_section--reflections .text-container p, .p_section--reflections .text-container .p {
+      font-size: 1.125rem; } }
+
+@media (min-width: 768px) {
+.p_section--reflections {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+  }
+
+@media (min-width: 992px) {
+.p_section--reflections .text-container {
+    max-width: 720px;
+    padding: 0; }
+  }

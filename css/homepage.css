@@ -152,11 +152,11 @@ button {
   background: #FFFFFF;
   border: 2px solid #CC3366;
   border-radius: 2px;
-  padding: 15px 32px;
+  padding: 10px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 4px 2px 4px;
   cursor: pointer;
   font-family:'Montserrat',sans-serif;
   font-style: normal;
