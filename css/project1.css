@@ -77,6 +77,9 @@ body {
 img {
       vertical-align: middle;
       border-style: none;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
   }
 
 .image-container, .image-container--fluid {
@@ -179,6 +182,10 @@ h1, h2 {
     font-size: 1.125rem;
     line-height: 1.76;
   }
+
+  .p_section h1, .p_section h2 {
+    text-align: center;
+}
 
 .p_section--text .text-container h4 {
   text-align: center;
@@ -455,15 +462,21 @@ h4 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  max-width: 1240px;
 }
 
 .footer .owner-title-line {
   align-self: flex-start;
+  margin-left: 12px;
+  margin-bottom: 12px;
 }
 
 
 .footer .owner-projects {
-  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
 }
 
 .footer .owner-footer-contact {
@@ -477,7 +490,7 @@ h4 {
   display: flex;
   background-color: white;
   box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
-  width: 400px;
+  width: 375px;
   height: 90px;
 }
 
@@ -702,3 +715,34 @@ ul.contact-links li {
     max-width: 720px;
     padding: 0; }
   }
+
+  /* Media Query - Project Footer */
+
+  @media (min-width: 576px) {
+.footer .owner-title-line .owner-projects {
+  display: flex;
+  flex-direction: row; }
+.owner-footer-contact {
+  order: 2; } }
+
+@media (min-width: 768px) {
+.footer .footer-info .owner-projects {
+  grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 992px) {
+.footer .footer-info{
+  flex-direction: row; }
+  .footer .footer-info .owner-projects {
+    justify-content: space-between;
+    display: inline-flex; }
+    .footer .footer-info .owner-projects {
+      align-items: flex-start; }
+.footer .owner-projects {
+  max-width: 734px;
+  padding-top: 0;
+  margin-left: 30px; }
+  .footer .owner-footer-contact {
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-left: auto;
+    height: 50px; }
