@@ -56,11 +56,9 @@ body {
         }
 
 
-        .nav-links,
-        .logo {
+        .nav-links{
             text-decoration: none;
             color: #CC3366;
-            font-size: 18px;
             font-family: 'Montserrat',sans-serif;
             font-style: normal;
             font-weight: 500;
@@ -118,7 +116,6 @@ body {
 
             .nav-links {
                 margin-left: 40px;
-                padding: 10px;
             }
 
             .logo {
@@ -127,6 +124,10 @@ body {
 
             .navbar-toggle {
                 display: none;
+            }
+
+            .nav-links:hover {
+                color: #e084a3;
             }
         }
 
