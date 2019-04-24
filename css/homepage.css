@@ -82,7 +82,6 @@
    grid-gap: 50px;
    margin-left: 157px;
  }
-}
 
 .card {
   background: rgb(245,245,245);
@@ -162,15 +161,13 @@ button:hover {
 .main-footer .footer-content{
   margin: 0;
   padding: 0;
-  text-align: right;
+  text-align: right
 }
 
 .footer-content .contact-links{
   display: inline-flex;
   margin-top: 35px;
-  align-items: right;
-  justify-content: right;
-  padding-right: 50px;
+  text-align: right;
 }
 
 .contact-links img{
@@ -183,28 +180,32 @@ button:hover {
 
 /* index.html Main Footer Media Queries */
 
-@media only screen
-and (max-width : 480px) {
-.main-footer { display: flex;
-align-items: center;}
+@media (max-width : 480px) {
+.main-footer .footer-content {
+text-align: center;
+clear:both;}
 }
 
-@media only screen
-and (max-width : 767px) {
-.main-footer { display: flex;
-align-items: center;}
+@media (max-width : 767px) {
+.main-footer .footer-content {
+  text-align: center;
+clear:both;}
 }
 
-
+@media (max-width: 992px) {
+.main-footer .footer-content {
+  text-align: center;
+clear:both;}
+}
 /** index.html Cards Media Queries **/
 
-@media only screen
-and (max-width : 480px) {
-.card { width:100px;}
+@media (max-width : 480px) {
+.card-container { width:100px;
+margin-left: 80px;}
 }
 
 
-@media only screen
-and (max-width : 767px) {
-.card { width:400px;}
+@media (max-width : 767px) {
+.card-container { width:400px;
+margin-left: 80px;}
 }
