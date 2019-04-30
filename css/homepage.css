@@ -18,9 +18,12 @@
 
 /*** index.html body styling ***/
 
-.greeting {
+.greeting > h2 {
   font-weight: bold;
+  font-style: normal;
   line-height: 64px;
+  font-size: 48px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .greeting .underline {
@@ -29,6 +32,11 @@
     inset 0 -0.175em white,
     inset 0 -0.2em #9999CC;
   display: inline;
+}
+
+.learn-more {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .learn-more > p {
@@ -40,11 +48,11 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   display: inline-block;
-  padding-right: 5px;
 }
 
 .learn-more a{
     color: #333333;
+    text-decoration: none;
 }
 
 .arrow {
@@ -54,8 +62,8 @@
 
 .button1{
   background-color: #CC3366;
+  border-radius: 2px;
   color: white;
-  border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -80,13 +88,14 @@
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
    grid-gap: 50px;
-   margin-left: 157px;
+   margin-left: 110px;
+   margin-top: 22px;
  }
 
 .card {
-  background: rgb(245,245,245);
+  background: #fff;
   border-radius: 2px;
-  box-shadow: -1px 2px 4px rgb(153,153,204), 1px 1px 3px rgb(153,179,204);
+  box-shadow: 0px 12px 24px rgba(51, 51, 102, 0.23);
   margin: 0 auto;
   max-width: 300px;
   width: 300px;
@@ -113,12 +122,14 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 24px;
+  opacity: 0.6;
 }
 
 .content > b {
   padding: 15px;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat';
   font-style: normal;
+  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
@@ -161,13 +172,12 @@ button:hover {
 .main-footer .footer-content{
   margin: 0;
   padding: 0;
-  text-align: right
+  text-align: right;
 }
 
 .footer-content .contact-links{
   display: inline-flex;
   margin-top: 35px;
-  text-align: right;
 }
 
 .contact-links img{
